@@ -1,4 +1,4 @@
-const page = document.querySelector("body");
+const page = document.querySelector(".container");
 
 function divMaker (columns,rows){
     for (let i = 0; i < columns; i++){
@@ -14,7 +14,7 @@ function divMaker (columns,rows){
             rowDiv.classList = "row"
             rowDiv.style["width"] = "6.25%"
             rowDiv.addEventListener("mouseover",() => {
-                rowDiv.style["background-color"] = "blue"
+                rowDiv.style["background-color"] = "#AE445A"
             })
             
             columnDiv.appendChild(rowDiv)
@@ -22,9 +22,14 @@ function divMaker (columns,rows){
     }
 }
 
-const button = document.querySelector("button")
-button.addEventListener('click',() => {
+const start = document.querySelector(".start")
+start.addEventListener('click',() => {
     divMaker(16,16)
+    start.style["background-color"] = "green"
+})
+const reload= document.querySelector(".reload")
+reload.addEventListener('click',() => {
+    location.reload()
 })
 
 
