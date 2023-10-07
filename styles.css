@@ -1,0 +1,9 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #570530;
+    height: 100vh;
+}
+div{
+    border: solid black 1px;
+}
